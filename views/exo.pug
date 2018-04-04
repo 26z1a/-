@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    .container
+        .row(style={'padding-top':'70px'})
+            .col
+                h1 录入题目
+                .form-group
+                    h3 题目类型
+                    select#typeId.form-control
+                        option(name='type' value='-1')|请选择type
+                        each type in types.types
+                            option(name='type' value=type.id)=type.name
+                .form-group
+                    h3 题目
+                    textarea#question.form-control(name="question", rows="5")
+                .form-group
+                    h3 答案
+                    textarea#answer.form-control(name="answer", rows="5")
+                .form-group
+                    input#btnAdd.btn.btn-primary.btn-block(type='button' onclick='sendExo()' value="Add")
+        br
+        br
+        .row
+            .col
+                h1 已有题目(按输入顺序排序)
+                table.table
+                    thead
+                        tr.table-primary
+                            th(scope='col')|id
+                            th(scope='col')|type
+                            th(scope='col')|question
+                            th(scope='col')|answer
+                    tbody
+                        each exo in exos.exos
+                            tr
+                                td(scope='row') #{exo.id}
+                                -for(var i=0;i<types.countTypes;i++){
+                                -   if(exo.typeId==types.types[i].id)
+                                        td=types.types[i].name
+                                -}
+                                td(style={'word-break':'break-all', 'word-wrap':'break-all'}) #{exo.question}
+                                td(style={'word-break':'break-all', 'word-wrap':'break-all'}) #{exo.answer}

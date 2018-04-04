@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  .container
+    .row(style={'padding-top':'70px'})
+      .col
+        .form-group
+          h2 输入要加入的type
+          .form-inline
+            input#typeName.form-control(type='text')  
+            input#btnAdd.btn.btn-primary(type='button' onclick='sendType()' value="Add")
+
+        h2 已有的type数量: #{countTypes} 
+      
+      .col
+        h2 已有type 
+        table.table
+          thead
+            tr.table-primary
+              th(scope='col')|id
+              th(scope='col')|typeName
+          tbody
+            each type in types
+              tr
+                td(scope='row') #{type.id}
+                td #{type.name}
+                
+              
+
+
+        //ul
+        //each type in types
+        //  li #{type.name}
+
+   
+
+
+

@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .container
+    .row(style={'padding-top':'70px'})
+      .col
+        h1 刷题
+        .form-group
+          h3 题目类型
+          select#type.form-control
+            option(name='type' value='-1')|请选择type
+            each type in types.types
+              option(name='type' value=type.id)=type.name
+        .form-group
+          input#btnQuestion.btn.btn-primary.btn-block(type='button' onclick='getQuestion()' value="出题")
+    br
+    br
+    #rowQuestion.row(style={'display':'none'})
+      .col
+        .form-group
+          span|题目id:&nbsp;
+          span#qID
+          h3|题目 :           
+          h4#question.form-control
+        .form-group
+          h3|答案 :
+          input#hiddenAnswer.form-control.is-valid(type='hidden' value='123')
+          textarea#answer.form-control.is-invalid(name="answer", rows="5",oninput='answerValidator()')
+
+        .form-group
+          input#btnAnswer.btn.btn-primary.btn-block(type='button' onclick='getAnswer()' value="答案")
+          input#btnNext.btn.btn-primary.btn-block(type='button' onclick='getQuestion()' value="下一题")
+

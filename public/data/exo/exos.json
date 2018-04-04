@@ -1,0 +1,266 @@
+{
+    "countExos": 52,
+    "exos": [{
+            "id": 1,
+            "typeId": 1,
+            "question": "1+1=?",
+            "answer": "2"
+        }, {
+            "id": 2,
+            "typeId": "1",
+            "question": "En mai 2016, quel pays d’Amérique du Sud a vu son président de la République suspendu ?\n",
+            "answer": "bresil"
+        }, {
+            "id": 3,
+            "typeId": "1",
+            "question": "En quelle année, le pôle Sud a-t-il été atteint pour la première fois ?",
+            "answer": "1911"
+        }, {
+            "id": 4,
+            "typeId": "2",
+            "question": "Parmi les écrivains suivants, lequel est l’auteur de la pièce de théâtre Les mains sales ?\n",
+            "answer": "jean-paul sartre"
+        }, {
+            "id": 5,
+            "typeId": "2",
+            "question": "En quelle année, le pôle Sud a-t-il été atteint pour la première fois ?\n",
+            "answer": "1911"
+        }, {
+            "id": 6,
+            "typeId": "2",
+            "question": "Parmi les auteurs suivants, lequel a écrit  Week-end à Zuydcoote ?",
+            "answer": "Robert Merle"
+        }, {
+            "id": 7,
+            "typeId": "2",
+            "question": "  À quelle année du calendrier hébreu correspond l’année 2016 ?\n",
+            "answer": "5776  +3761是希伯来日"
+        }, {
+            "id": 8,
+            "typeId": "2",
+            "question": "En France, en 1685, quel événement a conduit à l’exil de près de 300 000 personnes ?\n",
+            "answer": "la revocation de l'edit de nantes"
+        }, {
+            "id": 9,
+            "typeId": "2",
+            "question": "En France, préalablement à la réunion des États généraux par Louis XVI, quel roi les avait réunis entre 1614 et 1615 ?\n",
+            "answer": "louis XIII"
+        }, {
+            "id": 10,
+            "typeId": "2",
+            "question": "Parmi les auteurs suivants, lequel a écrit : « La Symphonie Pastorale » ?\n",
+            "answer": "andre gide"
+        }, {
+            "id": 11,
+            "typeId": "2",
+            "question": "Quel pays est envahi par l’Allemagne le 1er septembre 1940 ?\n",
+            "answer": "la pologne"
+        }, {
+            "id": 12,
+            "typeId": "2",
+            "question": "En quelle année considère-t-on la réalisation de la première voiture équipée d’un moteur à vapeur ?\n",
+            "answer": "1770"
+        }, {
+            "id": 13,
+            "typeId": "2",
+            "question": "En France, quel roi ou empereur décida de la construction du Panthéon ?\n",
+            "answer": " Louis XV "
+        }, {
+            "id": 14,
+            "typeId": "2",
+            "question": " Dans quel pays se situe Ouagadougou ?\n",
+            "answer": "AU burkina fasso"
+        }, {
+            "id": 15,
+            "typeId": "2",
+            "question": "Qui a remporté les élections présidentielles en Centrafrique en février 2016 ?\n",
+            "answer": "faustin-archange touadera"
+        }, {
+            "id": 16,
+            "typeId": "2",
+            "question": "À quel âge John Fitzerald Kennedy est-il devenu Président des États-Unis ?\n",
+            "answer": "43"
+        }, {
+            "id": 17,
+            "typeId": "2",
+            "question": "À quelle date a été signé le pacte « Germano-Soviétiques » ?\n",
+            "answer": "1939 8 23"
+        }, {
+            "id": 18,
+            "typeId": "2",
+            "question": " En mai 2016, quel est le nom du président de la République brésilien qui a été suspendu ?\n",
+            "answer": "Dilma Rousseff"
+        }, {
+            "id": 19,
+            "typeId": "2",
+            "question": "Quelle personnalité politique française a été présidente du Parlement européen ?\n",
+            "answer": "simone veil "
+        }, {
+            "id": 20,
+            "typeId": "2",
+            "question": "En quelle année a eu lieu l’exposition universelle à Paris qui a précédé celle de 1900 ?\n",
+            "answer": "1889"
+        }, {
+            "id": 21,
+            "typeId": "2",
+            "question": "En quelle année a eu lieu l’exposition universelle à Paris qui a précédé celle de 1900 ?\n",
+            "answer": "tour effel"
+        }, {
+            "id": 22,
+            "typeId": "2",
+            "question": " Où a eu lieu la guerre des Boers qui a pris fin en 1902 ?\n",
+            "answer": "En afrique du sud"
+        }, {
+            "id": 23,
+            "typeId": "2",
+            "question": "Pendant la Seconde Guerre mondiale dans quel port la flotte française s’est-elle sabordée ?\n",
+            "answer": "toulon"
+        }, {
+            "id": 24,
+            "typeId": "2",
+            "question": " De quel pays d’Afrique, Dakar est-elle la capitale ?\n",
+            "answer": "senegal"
+        }, {
+            "id": 25,
+            "typeId": "2",
+            "question": "Parmi les auteurs suivants, lequel a écrit Les Misérables ?\n",
+            "answer": "victor hugo"
+        }, {
+            "id": 26,
+            "typeId": "2",
+            "question": " En quelle année et à l’occasion de quel événement l’Espagne devient-elle une démocratie européenne moderne ?\n",
+            "answer": "1975 le mort de Franco, Juan carlos devient roi d'espagne"
+        }, {
+            "id": 27,
+            "typeId": "2",
+            "question": "Quel port américain est attaqué par les Japonais le 7 décembre 1941 ?\n",
+            "answer": "pearl harbor"
+        }, {
+            "id": 28,
+            "typeId": "2",
+            "question": " Qui est l’auteur de cette maxime  : «  Aimez qu’on vous conseille, et non pas qu’on vous loue » ?\n",
+            "answer": "Nicolas Boileau"
+        }, {
+            "id": 29,
+            "typeId": "2",
+            "question": "\n  Aux États-Unis, quel Président a précédé John Fitzgerald Kennedy ?\n",
+            "answer": "Eisenhower"
+        }, {
+            "id": 30,
+            "typeId": "2",
+            "question": "Parmi les auteurs suivants, lequel a écrit Le Rouge et le Noir ?\n",
+            "answer": "stendahl"
+        }, {
+            "id": 31,
+            "typeId": "2",
+            "question": "Où se situe la ville de Bagdad",
+            "answer": "irak"
+        }, {
+            "id": 32,
+            "typeId": "2",
+            "question": "En juillet 2016, qui a succédé à David Cameron à la tête du gouvernement britannique ?\n",
+            "answer": "theresa may"
+        }, {
+            "id": 33,
+            "typeId": "2",
+            "question": " Dans quel ouvrage Boileau livre-t-il ses conseils ?\n",
+            "answer": "l'art poetique"
+        }, {
+            "id": 34,
+            "typeId": "2",
+            "question": " Quel Pape condamna le régime nazisme dans son encyclique Mit Brennender Sorge en 1937 ?\n",
+            "answer": "pie xi"
+        }, {
+            "id": 35,
+            "typeId": "2",
+            "question": "Dans quel pays la bataille d’El-Alamein s’est-elle déroulée ?\n",
+            "answer": "egypt"
+        }, {
+            "id": 36,
+            "typeId": "2",
+            "question": "Parmi les pièces de théâtre suivantes, laquelle est  Molière ?",
+            "answer": "amour medecin \ndon juan\navare\nles femmes savantes"
+        }, {
+            "id": 37,
+            "typeId": "2",
+            "question": "\n  En République populaire de Chine, en quelle année \n Mao Zedong est-il décédé ?\n",
+            "answer": "1976"
+        }, {
+            "id": 38,
+            "typeId": "2",
+            "question": "Qui a remporté les élections présidentielles au Portugal en janvier 2016 ?",
+            "answer": "马塞洛 索萨"
+        }, {
+            "id": 39,
+            "typeId": "2",
+            "question": "En France, qui a été le dernier président de la IVe République ?\n",
+            "answer": "CDG"
+        }, {
+            "id": 40,
+            "typeId": "2",
+            "question": "  Quelle est la principale conséquence de l’élargissement du Canal de Panama ?\n",
+            "answer": "Une réduction d’un tiers de la durée du voyage entre l’Asie et la côte est des États-Unis"
+        },
+        {
+            "id": 41,
+            "typeId": "2",
+            "question": "Selon la Chanson de Roland, quel événement est à l’origine du massacre des hommes de Roland à Roncevaux ?\n",
+            "answer": " Il est trahi par son beau-père qu’il a envoyé négocier avec le roi de Saragosse et se fait massacrer à Roncevaux "
+        }, {
+            "id": 42,
+            "typeId": "2",
+            "question": "En France, quel est le premier président de la République a avoir été élu au suffrage universel direct ?\n",
+            "answer": " Louis Napoléon Bonaparte "
+        }, {
+            "id": 43,
+            "typeId": "2",
+            "question": "Parmi les scénaristes ou dessinateurs suivants, lequel est l’auteur de la série « Blake et Mortimer » ?\n",
+            "answer": "Jacobs"
+        }, {
+            "id": 44,
+            "typeId": "2",
+            "question": "Parmi les films suivants, lequel est basé sur un ouvrage de Yann Moix ?\n",
+            "answer": "podium 领奖台"
+        }, {
+            "id": 45,
+            "typeId": "2",
+            "question": "Parmi les auteurs suivants, lequel a écrit Birmane et Plonger  ?\n",
+            "answer": "christophe marco老师"
+        }, {
+            "id": 46,
+            "typeId": "2",
+            "question": "En 2015, combien l’Allemagne compte-t-elle approximativement d’habitants ?",
+            "answer": "81 m"
+        }, {
+            "id": 47,
+            "typeId": "2",
+            "question": "Durant la nuit de la Saint Sylvestre 2015, que s’est-il passé principalement à Cologne et à Hambourg ?",
+            "answer": "/  Plusieurs centaines de femmes ont été l’objet de violences sexuelles "
+        }, {
+            "id": 48,
+            "typeId": "2",
+            "question": "Au premier semestre 2016, quelle est la population estimée des 9 pays de l’ASEAN ?",
+            "answer": "620 M"
+        }, {
+            "id": 49,
+            "typeId": "2",
+            "question": "Où se trouvent les villes de Pondichéry et de Chandernagor ?\n",
+            "answer": "inde"
+        }, {
+            "id": 50,
+            "typeId": "2",
+            "question": "Début 2016, 300  000  emplois ont été créés en Angleterre, combien approximativement sont restés vacants ?\n",
+            "answer": "800 000"
+        }, {
+            "id": 51,
+            "typeId": "2",
+            "question": "Quelle est la projection de la population du continent Africain pour 2050 ?",
+            "answer": "2.4 Milliards"
+        }, {
+            "id": 52,
+            "typeId": "2",
+            "question": " En 2016, quelle est approximativement la part de la population de Londres née en dehors du Royaume-Uni ?\n",
+            "answer": "37%"
+        }
+    ]
+}
