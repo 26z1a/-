@@ -31,13 +31,43 @@ block content
                             th(scope='col')|type
                             th(scope='col')|question
                             th(scope='col')|answer
+                            th(scope='col')|mod
                     tbody
                         each exo in exos.exos
-                            tr
-                                td(scope='row') #{exo.id}
+                            tr(id='tr'+exo.id)
+                                td.rowId(scope='row') #{exo.id}
                                 -for(var i=0;i<types.countTypes;i++){
                                 -   if(exo.typeId==types.types[i].id)
-                                        td=types.types[i].name
+                                        td.rowTypeName=types.types[i].name
+                                        input.idType(type='hidden' value=exo.typeId)
                                 -}
-                                td(style={'word-break':'break-all', 'word-wrap':'break-all'}) #{exo.question}
-                                td(style={'word-break':'break-all', 'word-wrap':'break-all'}) #{exo.answer}
+                                td.rowQuestion(style={'word-break':'break-all', 'word-wrap':'break-all'}) #{exo.question}
+                                td.rowAnswer(style={'word-break':'break-all', 'word-wrap':'break-all'}) #{exo.answer}
+                                td.rowButton(style={'word-break':'break-all', 'word-wrap':'break-all'})
+                                    button.btn.btn-danger(type='button',data-toggle='modal',data-target='#exoModModal' data-id=exo.id)|修改
+
+
+    #exoModModal.modal.fade(tabindex='-1',role='dialog',aria-labelledby='ModExo',aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(rol='document')
+            .modal-content
+                .modal-header
+                    h3.modal-title#modalTitle 修改题目
+                .modal-body
+                    .form-group
+                        input#idMod(type='hidden' name='idMod' value='')
+                    .form-group
+                        h5 题目类型
+                        select#typeIdMod.form-control
+                            option(name='type' value='-1')|请选择type
+                            each type in types.types
+                                option(name='type' value=type.id)=type.name
+                    .form-group
+                        h3 题目
+                        textarea#questionMod.form-control(name="questionMod", rows="5")
+                    .form-group
+                        h3 答案
+                        textarea#answerMod.form-control(name="answerMod", rows="5")
+                .modal-footer
+                    .form-group
+                        button.btn.btn-secondary(type='button',data-dismiss="modal")|取消
+                        button.btn.btn-primary(type='button' onclick='modExo();')|修改

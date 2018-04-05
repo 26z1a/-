@@ -30,6 +30,55 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.post('/mod', function (req, res, next) {
+
+  if(fs.existsSync('./public/data/exo/exos.json')){
+    fs.readFile('./public/data/exo/exos.json','utf8',function(err,data){
+      if(err){
+        console.log(err);
+        res.sendStatus(500);
+        res.end(err);
+      }
+      else{
+        exos = JSON.parse(data);
+        //console.log(exo);
+
+        mod = req.body;
+        mod.typeId = parseInt(mod.typeId);
+
+        var pos = exos.exos.map(function(e){return e.id}).indexOf(mod.id);
+
+        // console.log(mod);
+        // console.log(exos.exos[pos]);
+        // exos.exos[pos] = mod;
+
+        exos.exos[pos].typeId = mod.typeId;
+        exos.exos[pos].question = mod.question;
+        exos.exos[pos].answer = mod.answer;
+        //console.log(pos);
+
+        json = JSON.stringify(exos);
+        fs.writeFile('./public/data/exo/exos.json',json,function(err){
+          if(err){
+            console.log(err);
+            res.sendStatus(500);
+            res.end(err);
+          }
+          else{
+            res.sendStatus(200);
+            res.end();
+          }
+        }); 
+      }
+  })
+}
+
+});
+
+
+
+
+
 router.post('/add',function(req,res,next){
   var obj = req.body;
   //console.log(obj);
@@ -46,7 +95,7 @@ router.post('/add',function(req,res,next){
         exos.countExos++;
         exos.exos.push({
           "id":exos.countExos,
-          "typeId":obj.typeId,
+          "typeId":parseInt(obj.typeId),
           "question":obj.question,
           "answer":obj.answer
         });

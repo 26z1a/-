@@ -16,8 +16,52 @@ $(document).ready(function(){
     console.log('types loaded');
     $('#typesnav').addClass('active');
   }
+});
+
+$('#exoModModal').on('show.bs.modal',function(event){
+  var button = $(event.relatedTarget);
+  var id = button.data('id');
+  var selectorName = '#tr'+id;
+  var tr = $(selectorName);
+  var typeId=tr.children('.idType').val();
+  var question = tr.children('.rowQuestion').html();
+  var answer = tr.children('.rowAnswer').html();
+  console.log(typeId);
+  var modal = $(this);
+  
+  //console.log(this);
+  modal.find('#idMod').val(id);
+  modal.find('#typeIdMod').val(typeId);
+  modal.find('#questionMod').val(question);
+  modal.find('#answerMod').val(answer);
 
 });
+
+function modExo(){
+  var id = parseInt($('#idMod').val().toString(),10);
+  var typeId = $('#typeIdMod').val();
+  var question = $('#questionMod').val();
+  var answer = $('#answerMod').val();
+  var data = {
+    id:id,
+    typeId:typeId,
+    question:question,
+    answer:answer
+  };
+  console.log(JSON.stringify(data));
+
+  $.ajax({
+    url: '/exos/mod',
+    type: "POST",
+    data: JSON.stringify(data),
+    contentType: "application/json",
+    complete: function () {
+      location.reload();
+    }
+  });
+
+
+};
 
 function sendType() {
   if ($('#typeName').val() != '') {

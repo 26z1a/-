@@ -2,20 +2,20 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='/css/style.css')
   body
-    #container
-      ul.nav.nav-tabs#navbar
+    #navtab
+      ul.nav.nav-tabs#navtab
         li.nav-item
           a#indexnav.nav-link(href='/')|刷题
         li.nav-item
           a#typesnav.nav-link(href='/types')|增加types
         li.nav-item
-          a#exosnav.nav-link(href='/exos')|增加exo
+          a#exosnav.nav-link(href='/exos')|增加exo  
     block content
-script(src='js/jquery.min.js')
-script(src='js/bootstrap.min.js')
-script(src='js/bootstrap.bundle.min.js')
-script(src='js/script.js')
+script(src='/js/jquery.min.js')
+script(src='/js/bootstrap.min.js')
+script(src='/js/bootstrap.bundle.min.js')
+script(src='/js/script.js')
 
   
